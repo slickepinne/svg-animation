@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#woman, #boots {
+  animation: jump 1s ease-in-out infinite alternate;
+}
+
+#hand {
+  animation: wink 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#kapuze {
+  animation: fall 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#umbrella {
+  animation: wink 1s ease-in-out infinite alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+#hair {
+  animation: wip 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes jump {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes wink {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-15deg);
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+
+@keyframes wip {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(60deg);
+  }
+}
